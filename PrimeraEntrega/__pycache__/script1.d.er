@@ -1,0 +1,48 @@
+##[pylyzer] failed /home/jdra000/Documents/u/Repo-Proyecto/PrimeraEntrega/script1.py 1742177571 5086
+.Nodo: ClassType
+.Nodo.data_int: Never
+.Nodo.data_String: Never
+.Nodo.anterior: Never
+.Nodo.siguiente: Never
+.Nodo.__call__: (siguiente: Obj := Obj, anterior: Obj := Obj, data_int: Obj := Obj, data_String: Obj := Obj) -> script1.Nodo
+
+.LDE: ClassType
+.LDE.cabeza: Never
+.LDE.__call__: () -> script1.LDE
+.LDE.agregarInicio: (self: script1.LDE, data_int: Obj, data_String: Obj) -> NoneType
+.LDE.imprimirlista: (self: script1.LDE) -> NoneType
+.LDE.empty: (self: script1.LDE) -> {False}
+.LDE.count: (self: script1.LDE) -> Int
+.LDE.search: (self: script1.LDE, data: Int) -> {"Not found"}
+.LDE.ingresarEstacion: (self: script1.LDE) -> NoneType
+.LDE.ordenar: (self: script1.LDE) -> NoneType
+
+.dividirlista: |Type_201 <: script1.Nodo|(head: Type_201) -> global::Tuple([Type_201, Never])
+.fusionar: (lista1: Never, lista2: Never) -> Never
+.ordenamientoPorMezcla: (head: Never) -> Never
+script1 = pyimport "script1"
+.rutaBus: .LDE
+
+
+
+
+
+
+
+
+
+
+
+
+.ubi: Str
+
+
+.result: Never
+
+
+
+
+
+
+
+
