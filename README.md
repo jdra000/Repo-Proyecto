@@ -58,6 +58,9 @@ Luego de haber implementado las funcionalidades básicas de la primera entrega, 
  3. El usuario pulsa 1 para ingresar al método adicional de búsqueda.
 
 ¿Cómo funciona el árbol prefijo (método de búsqueda)?
- 1. Por cada nodo que fue creado en la funcionalidad básica, se recorre cada letra de este nodo y se crea un diccionario para cada letra, el cual tiene como valor la siguiente letra. De esta manera, se construye una cádena que servirá para el método de coincidencias más adelante.
- 2. Se recorre cada letra de la cadena ingresada por el usuario, y a partir de allí comienza el recorrido por el diccionario hasta llegar al último caractér y mostrar las ramas que nacen a partir de esta.
+ 1. Por cada nodo que fue creado en la funcionalidad básica, se recorre cada letra de este nodo y se crea un diccionario para cada letra, el cual tiene como valor el siguiente nodo. De esta manera, se construye una cádena de nodos que servirá para el método de coincidencias más adelante.
+ 2. Se recorre el árbol prefijo letra por letra de la cadena ingresada por el usuario, este recorrido finaliza en el último caracter escrito por el usuario.
+ 3. Una vez ubicado el último nodo, se buscan las ramas que coinciden por la cadena ingresada por el usuario. Estas coincidencias se le ofrecen al usuario con el fin de que pueda escoger la estación que busca.
+ 4. Luego de realizar la selección de la estación correcta, se busca su posición en el árbol inicialmente creado, con el fin de informarle al usuario cuantas estaciones debe pasar desde la estación raiz, incluyendola, para llegar a la estación deseada.
+    
 ![Texto alternativo](./img/2.png)
