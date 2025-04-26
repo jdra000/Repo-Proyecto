@@ -19,10 +19,12 @@ El segundo script es un paso adelante en tiempos de ejecución y funciona bajo l
 
 Para la implementación utilizamos 4 apuntadores por nodo, con todos los nodos en el primer nivel (nivel 0) y en los niveles superiores algunos de ellos, escogidos bajo aleatoriedad dentro del método insertar.
 
-¿ Cómo funciona el algoritmo? Insertar:
+¿ Cómo funciona el algoritmo? 
+Insertar:
 1.	Buscar(x) y encontrar dónde debería estar posicionado en la lista con nivel 0.
 2.	Insertar x en la lista con nivel 0 para cumplir con la invariante que nos advierte de la existencia de todos los nodos en el primer nivel.
 3.	Lanzar una moneda. Mientras el resultado sea cara, promover el nodo a un nivel superior manteniendo la cabeza como extremo izquierdo en el nuevo nivel. De lo contrario, detener el procedimiento. (Este paso lo implementamos mediante la librería random de python)
+
 Eliminar:
 1.	Buscar(x) y encontrar su posición.
 2.	Si x está en primer nivel. Desvincular sus apuntadores.
@@ -45,3 +47,17 @@ https://ocw.mit.edu/courses/6-046j-introduction-to-algorithms-sma-5503-fall-2005
 https://www.osa.fu-berlin.de/bioinformatics_msc/en/exemplary_tasks/informatics_algorithms/index.html
 
 ## Segunda Entrega
+
+Al momento de realizar el cambio en la estrucutra de datos de la primera entrega, nos dimos cuenta de lo efectivo que resultan los árboles para el manejo de las rutas, ya que cada nodo hijo hace referfencia a una parada dentro de la ruta a seguir.
+Debido a esto, decidimos continuar con la temática de rutas utilizada en la primera entrega, pero esta vez permitiéndole al usuario crear la estrucutra al inicio del programa y durante este proceso calculamos el peso, nivel y grado del arbol que se está construyendo. Además, implementamos la libreria BigTree para utilizar su función de impresión para ver graficamente lo construido, y en conjunto con nuestra clase nodo, crear el mmismo.
+Luego de haber implementado las funcionalidades básicas de la primera entrega, construimos un método de búesqueda mediante árboles prefijos, el cual encuentra coincidencias en base a lo ingresado en consola por el usuario.
+
+¿Cómo funciona el código?
+ 1. Se solicita al usuario ingresar el nombre de los nodos nivel tras nivel.
+ 2. Se le muestra al usuario el árbol construido.
+ 3. El usuario pulsa 1 para ingresar al método adicional de búsqueda.
+
+¿Cómo funciona el árbol prefijo (método de búsqueda)?
+ 1. Por cada nodo que fue creado en la funcionalidad básica, se recorre cada letra de este nodo y se crea un diccionario para cada letra, el cual tiene como valor la siguiente letra. De esta manera, se construye una cádena que servirá para el método de coincidencias más adelante.
+ 2. Se recorre cada letra de la cadena ingresada por el usuario, y a partir de allí comienza el recorrido por el diccionario hasta llegar al último caractér y mostrar las ramas que nacen a partir de esta.
+![Texto alternativo](./img/2.png)
