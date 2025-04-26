@@ -38,4 +38,8 @@ Por defecto, el método de búsqueda retorna el nodo encontrado sea cual sea su 
 Skip List se construye bajo aleatoriedad y aunque no es exactamente igual a un árbol binario, toma una forma parecida a un árbol. Sus métodos insertar, eliminar, y buscar, toman la forma O(logn).
 ![Texto alternativo](./img/1.jpg)
 
+Recursos:
+[https://ocw.mit.edu/courses/6-046j-introduction-to-algorithms-sma-5503-fall-2005/resources/l ecture-12-skip-lists/]
+https://www.osa.fu-berlin.de/bioinformatics_msc/en/exemplary_tasks/informatics_algorithms/ index.html
+
 
