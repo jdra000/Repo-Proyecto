@@ -6,6 +6,7 @@ class node:
         self.data = data
         self.padre = None
         self.nivel = 1
+        self.hijos = []
 
 Buscador = BuscadorEstaciones()
 listaNodos = []
@@ -23,6 +24,20 @@ Buscador.registrar_estacion(nodeRoot.data)
 rootBigtree= Node(nodeRoot.data) 
 listaBigTree.append(rootBigtree)   
 
+nodos = []
+nodoTemp = nodeRoot
+nodos.append(nodoTemp)
+
+def buscar(nombre):
+    cola = [nodeRoot]  # <- nueva cola local, no global
+    while cola:
+        nodo = cola.pop(0)
+        if nodo.data == nombre:
+            return nodo.nivel
+        else:
+            for hijo in nodo.hijos:
+                cola.append(hijo)
+    return None
 while True:
     try:
         root = listaNodos.pop(0)
@@ -46,6 +61,8 @@ while True:
             Buscador.registrar_estacion(nodeIns.data)
 
             listaNodos.append(nodeIns)
+            root.hijos.append(nodeIns)
+
             listaBigTree.append(bigtreeNode)
             weight += 1
             tempOrder += 1
@@ -55,12 +72,12 @@ print(f"Arbol con un peso de {weight}")
 print(f"Arbol con un orden de {order}")
 
 print_tree(rootBigtree)
-buscar = int(input("Pulse 1 para entrar al buscador: "))
-if buscar == 1 :
+opcion = int(input("Pulse 1 para entrar al buscador: "))
+if opcion == 1 :
 
 
     while True:
-        entrada = input("\nIntroduzca el nombre o parte del nombre de la estación a buscar (de lo contario introduzca 'salir' para terminar): ")
+        entrada = input("\nIntroduzca parte del nombre de la estación a buscar (de lo contario introduzca 'salir' para terminar): ")
         if entrada.lower() == 'salir':
             break
 
@@ -73,12 +90,6 @@ if buscar == 1 :
             print("Se encontraron varias coincidencias:")
             for i, estacion in enumerate(coincidencias, 1):
                 print(f"{i}. {estacion}")
-            seleccion = input("Seleccione el número de la estación que desea utilizar (): ")
-            if seleccion.isdigit():
-                seleccion = int(seleccion)
-                if 1 <= seleccion <= len(coincidencias):
-                    print(f"Usted seleccionó: {coincidencias[seleccion - 1]}")
-                else:
-                    print("Número fuera de rango.")
-            else:
-                print("Entrada no válida.")
+            seleccion = input("Seleccione el nombre de la estación que desea utilizar (): ")
+            print(f'Para llegar a la estacion {seleccion} debes pasar por {buscar(seleccion)-1} paradas desde la estacion principal {nodeRoot.data}')
+
