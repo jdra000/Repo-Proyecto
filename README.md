@@ -39,8 +39,8 @@ Skip List se construye bajo aleatoriedad y aunque no es exactamente igual a un Ã
 ![Texto alternativo](./img/1.jpg)
 
 Recursos:
-https://ocw.mit.edu/courses/6-046j-introduction-to-algorithms-sma-5503-fall-2005/resources/l ecture-12-skip-lists/
+https://ocw.mit.edu/courses/6-046j-introduction-to-algorithms-sma-5503-fall-2005/resources/lecture-12-skip-lists/
 
-https://www.osa.fu-berlin.de/bioinformatics_msc/en/exemplary_tasks/informatics_algorithms/ index.html
+https://www.osa.fu-berlin.de/bioinformatics_msc/en/exemplary_tasks/informatics_algorithms/index.html
 
 
