@@ -19,7 +19,7 @@ El segundo script es un paso adelante en tiempos de ejecución y funciona bajo l
 
 Para la implementación utilizamos 4 apuntadores por nodo, con todos los nodos en el primer nivel (nivel 0) y en los niveles superiores algunos de ellos, escogidos bajo aleatoriedad dentro del método insertar.
 
-¿ Cómo funciona el algoritmo? 
+¿Cómo funciona el algoritmo? 
 Insertar:
 1.	Buscar(x) y encontrar dónde debería estar posicionado en la lista con nivel 0.
 2.	Insertar x en la lista con nivel 0 para cumplir con la invariante que nos advierte de la existencia de todos los nodos en el primer nivel.
