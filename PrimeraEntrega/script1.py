@@ -25,8 +25,8 @@ class LDE:
     def imprimirlista(self):
         actual = self.cabeza
         while actual:
-             print(f"({actual.data_int}, {actual.data_String})", end=" - ")
-             actual = actual.siguiente
+            print(f"({actual.data_int}, {actual.data_String})", end=" - ")
+            actual = actual.siguiente
         print(".")
     # Verificar si la lista esta vacia 
     def empty(self):
@@ -68,7 +68,7 @@ class LDE:
 #Metodo para ordenar la lista(ruta) utilizando el ordenamiento por mezcla
     def ordenar(self):
         self.cabeza = ordenamientoPorMezcla(self.cabeza)
-  
+
 
 #Aplicacion del ordenamiento por mezcla para ordenar la lista(ruta) teniendo en cuenta su valor int(la ubicacion) 
 # ! O(n)
