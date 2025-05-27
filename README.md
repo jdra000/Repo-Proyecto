@@ -88,11 +88,6 @@ Lo interesante de este problema y debido a lo cual se asocia con el problema ant
 
 En el problema de flujo máximo se busca calcular la mayor tasa a la que podemos transportar el material desde la fuente hasta el sumidero sin violar ninguna de las restricciones de capacidad, o en términos relacionados con el problema establecido, la máxima cantidad de vehículos que pueden recorrer un condado en estado de evacuación inmediata sin sobrepasar el límite de las vías y generar embotellamientos de mayor magnitud.
 
-## Nodos y Aristas
-
-Además de establecer qué representan los nodos y aristas en el problema, nos valemos de mencionar algunos atributos clave de estos elementos.
-Es importante aclarar que para la correcta implementación del método, cada arista (u, v) o arista positiva al flujo, que pasa a través del grafo G = (V, E), debe tener una capacidad no negativa, además de no tener otra arista (v, u), o arista opuesta al flujo, ya que esta arista se reserva para el manejo de la red residual y almacenar los valores que esta misma red genera dentro del camino aumentante.
-
 ## Algoritmos de exploración de grafos
 
 El método Ford-Fulkerson funciona bajo DFS (Depth First Search) o Búsqueda en Profundidad, lo que lo vuelve propenso a tiempos de ejecución indeterminados. Una solución a este problema es la implementación de BFS (Breadth First Search) o Búsqueda en anchura, la cual funciona bajo el algoritmo de Edmonds Karp dentro del método de Ford-Fulkerson, convirtiéndolo así en un problema con tiempo de ejecución polinomial.
