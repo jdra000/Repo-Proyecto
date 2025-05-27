@@ -97,7 +97,7 @@ La evacuación se considerará en base a las vías principales designadas por el
 * Enfoque en estado de congestión masiva:
 Se realiza el enfoque durante este momento, ya que para optimizar la evacuación es necesario tener presente la condición más esperada para una operación como esta.
 
-# 1.2 Investigación del problema y alternativas de solución:
+## 1.2 Investigación del problema y alternativas de solución:
 
 ## Introducción al problema de flujo máximo
 
@@ -133,6 +133,6 @@ Como consecuencia a la red residual creada, las aristas positivas al flujo son p
 
 La consecuencia de cada iteración de búsqueda del BFS y la respuesta de la red residual, es un camino aumentante que establece nuevos valores para cada arista, tanto opuesta al flujo como positiva al flujo. Es por esto que el grafo base, el cual empieza sin aristas opuestas al flujo, deja de ser iterado a partir de la segunda búsqueda con BFS, para ser reemplazado por uno con caminos aumentantes nuevos en cada iteración.
 
-# Resultados y Conclusiones
+## Resultados y Conclusiones
 
 El flujo final calculado por el código nos muestra las rutas a tener en cuenta para obtener el flujo vehícular máximo dentro del condado de Collier, logrando así una evacuación aún más efectiva hacia Immokalee, con menos probabilidades de saturar y comprometer vías alternas.
