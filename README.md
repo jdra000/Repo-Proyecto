@@ -1,10 +1,10 @@
-## Integrantes
+# Integrantes
 * Laura Natalia Ballesteros Gualdrón 2221650
 * Héctor Alirio Valdeleon Millan 2230063
 * Nicol Alexa Rodriguez Alfonso 2240071
 * Juan David Rey Ardila 2210080
 
-## Primera Entrega
+# Primera Entrega
 Debido al funcionamiento de las listas enlazadas, y lo poco eficiente que estas resultan para realizar búsquedas - debido a no tener acceso aleatorio a los elementos dentro de ella-, decidimos implementar dos scripts que solucionan el problema de ordenamiento y búsqueda dentro de una lista doblemente enlazada.
 
 script1.py
@@ -46,7 +46,7 @@ https://ocw.mit.edu/courses/6-046j-introduction-to-algorithms-sma-5503-fall-2005
 
 https://www.osa.fu-berlin.de/bioinformatics_msc/en/exemplary_tasks/informatics_algorithms/index.html
 
-## Segunda Entrega
+# Segunda Entrega
 
 Al momento de realizar el cambio en la estrucutra de datos de la primera entrega, nos dimos cuenta de lo efectivo que resultan los árboles para el manejo de las rutas, ya que cada nodo hijo hace referfencia a una parada dentro de la ruta a seguir.
 Debido a esto, decidimos continuar con la temática de rutas utilizada en la primera entrega, pero esta vez permitiéndole al usuario crear la estrucutra al inicio del programa y durante este proceso calculamos el peso, nivel y grado del arbol que se está construyendo. Además, implementamos la libreria BigTree para utilizar su función de impresión para ver graficamente lo construido, y en conjunto con nuestra clase nodo, crear el mmismo.
@@ -65,9 +65,9 @@ Luego de haber implementado las funcionalidades básicas de la primera entrega, 
     
 ![Texto alternativo](./img/2.png)
 
-## Tercera Entrega
+# Tercera Entrega
 
-# 1.1 Descripción del problema: 
+## 1.1 Descripción del problema: 
 
 En situaciones de emergencia, como huracanes o inundaciones, la evacuación oportuna y efectiva es crucial para salvaguardar vidas. En el estado de Florida (Estados Unidos), las carreteras principales juegan un papel vital en trasladar a las personas desde zonas de riesgo hacia áreas seguras. Sin embargo, durante una evacuación inmediata, el flujo vehicular combinado de evacuados y residentes de zonas con menor riesgo de ser afectadas, aumenta considerablemente, llegando incluso al punto de sobrepasar el volumen de tráfico permitido por autopistas y generar colapso. Este proyecto busca abordar este desafío mediante el cálculo del flujo máximo que pueden soportar estas rutas clave. Con base en datos de tráfico ajustados, la herramienta permite identificar cuellos de botella y proporciona información valiosa para que los responsables de la evacuación optimicen la distribución de vehículos, asegurando así una salida más eficiente y reduciendo el riesgo de obstrucciones críticas.
 
