@@ -88,7 +88,7 @@ Lo interesante de este problema y debido a lo cual se asocia con el problema ant
 
 En el problema de flujo máximo se busca calcular la mayor tasa a la que podemos transportar el material desde la fuente hasta el sumidero sin violar ninguna de las restricciones de capacidad, o en términos relacionados con el problema establecido, la máxima cantidad de vehículos que pueden recorrer un condado en estado de evacuación inmediata sin sobrepasar el límite de las vías y generar embotellamientos de mayor magnitud.
 
-## Ford-Fulkerson y Edmonds-Karp
+## Ford-Fulkerson y la red residual
 El método Ford-Fulkerson funciona bajo DFS (Depth First Search) o Búsqueda en Profundidad, lo que lo vuelve propenso a tiempos de ejecución indeterminados. Una solución a este problema es la implementación de BFS (Breadth First Search) o Búsqueda en anchura, la cual funciona bajo el algoritmo de Edmonds Karp dentro del método de Ford-Fulkerson, convirtiéndolo así en un problema con tiempo de ejecución polinomial.
 
 El corazón del método de Ford-Fulkerson está en el funcionamiento de la red residual , la cual además de establecer nuevas capacidades para todas las aristas opuestas y positivas al flujo, restringe la búsqueda del camino (BFS) por aristas positivas al flujo,  donde la capacidad actual de la arista sea igual a cero. 
