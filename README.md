@@ -84,19 +84,6 @@ Para cumplir con los requisitos del proyecto, se decidió convertir los nodos de
 
 Grafo dirigido, ponderado, de 24 nodos, con origen y sumidero dinámico. Cada nodo representa puntos clave de flujo vehicular y cada arista basa su capacidad en el 10% del Tránsito Promedio Diario Anual (TPDA) de la vía que representa. El cálculo del 10% del TPDA para una vía, es una aproximación realista a la cantidad de vehículos que circulan en ella durante un estado de congestión masiva.
 
-## Parámetros clave
-
-Este análisis considera el peor escenario: una evacuación urgente sin tiempo para planificar. Evaluando las capacidades de las vías, podemos determinar la máxima cantidad de vehículos que pueden circular, lo que ayudará a organizar mejor la evacuación y evitar embotellamientos mayores.
-   
-A partir de lo mencionado, es necesario tener presentes ciertos parámetros clave, ya que son fundamentales tanto para el análisis y comprensión del problema como para su correcta implementación en código.
-
-* Rango de Tiempo:
-El análisis se realiza en el rango de una hora, específicamente en la hora de mayor congestión, cuando el tráfico está en su máxima capacidad.
-* Vías principales:
-La evacuación se considerará en base a las vías principales designadas por el departamento de Transporte del estado Florida, pues pese a que hay muchas vías que podrían considerarse, las seleccionadas son las más aptas para un flujo de tal magnitud.
-* Enfoque en estado de congestión masiva:
-Se realiza el enfoque durante este momento, ya que para optimizar la evacuación es necesario tener presente la condición más esperada para una operación como esta.
-
 ## 1.2 Investigación del problema y alternativas de solución:
 
 ## Introducción al problema de flujo máximo
