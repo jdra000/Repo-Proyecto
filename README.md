@@ -69,16 +69,11 @@ Luego de haber implementado las funcionalidades básicas de la primera entrega, 
 
 ## 1.1 Descripción del problema: 
 
-En situaciones de emergencia, como huracanes o inundaciones, la evacuación oportuna y efectiva es crucial para salvaguardar vidas. En el estado de Florida (Estados Unidos), las carreteras principales juegan un papel vital en trasladar a las personas desde zonas de riesgo hacia áreas seguras. Sin embargo, durante una evacuación inmediata, el flujo vehicular combinado de evacuados y residentes de zonas con menor riesgo de ser afectadas, aumenta considerablemente, llegando incluso al punto de sobrepasar el volumen de tráfico permitido por autopistas y generar colapso. Este proyecto busca abordar este desafío mediante el cálculo del flujo máximo que pueden soportar estas rutas clave. Con base en datos de tráfico ajustados, la herramienta permite identificar cuellos de botella y proporciona información valiosa para que los responsables de la evacuación optimicen la distribución de vehículos, asegurando así una salida más eficiente y reduciendo el riesgo de obstrucciones críticas.
+En situaciones de emergencia como huracanes o inundaciones, una evacuación rápida y eficiente es fundamental para proteger vidas. En el estado de Florida, y específicamente en el condado de Collier, las carreteras principales son esenciales para trasladar personas desde zonas de alto riesgo hacia áreas seguras. Sin embargo, el aumento repentino del tráfico durante una evacuación puede superar la capacidad de las autopistas, generando cuellos de botella y colapsos.
+
+Este proyecto se enfoca en analizar la capacidad máxima de las rutas clave en el condado de Collier, considerando la variabilidad de su infraestructura vial. A través del uso de datos de tráfico ajustados y modelación con grafos, se identifican puntos críticos y se ofrece una herramienta interactiva que permite al usuario definir nodos de entrada y salida. Esto facilita la visualización de la dinámica del flujo vehicular y proporciona información valiosa para mejorar la planificación y distribución del tránsito en caso de evacuación masiva, reduciendo el riesgo de obstrucciones y mejorando la respuesta ante desastres naturales.
 
 ## ![Texto alternativo](./img/map.jpg)
-
-## ¿Por qué escogimos esta zona? 
-
-Escogimos Florida, específicamente el condado de Collier, debido a su alta vulnerabilidad a desastres naturales, especialmente huracanes, que obligan a realizar evacuaciones de carácter rápido y masivo de zonas costeras y urbanas.
-Teniendo en cuenta que la infraestructura en estas vías es variable y su capacidad vehicular no es la misma a lo largo del condado de Collier, la gestión del flujo vehicular en una evacuación repentina, se convierte en un desafío logístico, dando así lugar a la importancia de contar con un análisis preciso de las rutas y la capacidad de las mismas para soportar el flujo vehicular al que se enfrentarán.
-Para cumplir con los requisitos del proyecto, se decidió convertir los nodos de salida y de entrada de la evacuación en variables que el usuario deberá elegir, y de esta manera mostrar la dinámica del grafo y del algoritmo.
-
 
 ## ¿Qué tipo de grafo modela el problema? 
 
